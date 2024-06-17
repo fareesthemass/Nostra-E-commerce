@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- offer bar -->
+    <div class="offer_bar">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first order<i id="offer-close"
+                style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i></p>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="" onclick="arrival(event)" class="newarrival__btn">New Arrival</a>
+            <a href="" onclick="wanted(event)" class="mostwanted__btn">Most Wanted</a>
+            <a href="">Collections</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="navbar-menu-toggle">
+            <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+
+        </div>
+    </nav>
+
+<!--side navbar-->
+<div class="side__navbar">
+    <p id="sidenavbar__cancel" style="text-align: right; padding: 20px; cursor: pointer;">X</p>
+    <div class="side__links">
+        <a href="index.html">Home</a>
+        <a href="" onclick="arrival(event)" class="newarrival__btn">New Arrival</a>
+        <a href="" onclick="wanted(event)"  id="mostwanted__btn">Most Wanted</a>
+        <a href="collection.html">Collections</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+</div>
+
+    <div class="container">
+        <!-- slider -->
+        <div class="slider">
+
+
+
+            <div class="slider__content">
+                <h1>Level up your style with our</h1>
+                <h4>Summer Collections</h4>
+                <button class="slider__btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+
+            <div class="slider__imgs">
+                <img class="slider-image" src="images/slider-one.jpg" width="100%" alt="">
+                <img class="slider-image" src="images/slider-one.jpg" width="100%" alt="">
+                <img class="slider-image" src="images/slider-one.jpg" width="100%" alt="">
+            </div>
+
+            <div class="slider__leftbtn">
+                <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+            </div>
+            <div class="slider__rightbtn">
+                <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <!-- brands -->
+
+        <h2 class="brands__title">Brands</h2>
+        <div class="brands">
+
+            <div class="brand-items">
+                <img class="brand-icon" src="images/adidas.png" alt="">
+                <p>Adidas</p>
+            </div>
+
+            <div class="brand-items">
+                <img class="brand-icon" src="images/behance.png" alt="">
+                <p>Behance</p>
+            </div>
+
+
+            <div class="brand-items">
+                <img class="brand-icon" src="images/leaves.png" alt="">
+                <p>Leaves</p>
+            </div>
+
+
+            <div class="brand-items">
+                <img class="brand-icon" src="images/simple.png" alt="">
+                <p>Simple</p>
+            </div>
+
+
+            <div class="brand-items">
+                <img class="brand-icon" src="images/twitch.png" alt="">
+                <p>Twitch</p>
+            </div>
+
+
+        </div>
+
+        <!--service-->
+        <div class="initial__animation">
+            <div class="services">
+                <div class="services__container1">
+                    <div>
+                        <h2>We Provide Best </h2>
+                        <h2>Customer Experience</h2>
+                    </div>
+                    <div>
+                        <p>|| We ensure that our customer have the best shopping experience</p>
+                    </div>
+
+                </div>
+                <div class="services__container2">
+                    <div>
+                        <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                        <h4>Original Products</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur</p>
+                    </div>
+                    <div>
+                        <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                        <h4>Satisfaction Gurantee</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur</p>
+                    </div>
+                    <div>
+                        <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+                        <h4>New Arrival Everyday</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur</p>
+                    </div>
+                    <div>
+                        <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                        <h4>Fast & Free Shipping</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--new arrivals-->
+        <div class="initial__animation">
+            <div class="new__arrivals__title" style="margin-top: 5vh;">
+                <h2>New Arrivals</h2>
+            </div>
+            <div class="new__arrivals">
+
+                <div class="new__arrival__container">
+                    <img style="width: 20vw;" src="images/f1.jpg" alt="">
+                    <div class="overlay"></div>
+                    <button class="shop__btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="new__arrival__container">
+                    <img style="width: 20vw;" src="images/f2.jpg" alt="">
+                    <div class="overlay"></div>
+                    <button class="shop__btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="new__arrival__container">
+                    <img style="width: 20vw;" src="images/f3.jpg" alt="">
+                    <div class="overlay"></div>
+                    <button class="shop__btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="new__arrival__container">
+                    <img style="width: 20vw;" src="images/f4.jpg" alt="">
+                    <div class="overlay"></div>
+                    <button class="shop__btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--most wanted-->
+        <div class="initial__animation">
+            <h2 style="margin-top: 5vh;" class="mostwanted__title">Most Wanted</h2>
+            <div class="mostwanted">
+                <div class="mostwanted__container">
+                    <img style="width: 20vw;" src="images/m1.jpg" alt="">
+                    <p class="saleoverlay">Sale</p>
+                    <img class="likebtn" src="images/blackheart.png" alt="">
+                </div>
+
+                <div class="mostwanted__container">
+                    <img style="width: 20vw;" src="images/m2.jpg" alt="">
+                    <p class="saleoverlay">Sale</p>
+                    <img class="likebtn" src="images/blackheart.png" alt="">
+                </div>
+
+                <div class="mostwanted__container">
+                    <img style="width: 20vw;" src="images/m3.jpg" alt="">
+                    <p class="saleoverlay">Sale</p>
+                    <img class="likebtn" src="images/blackheart.png" alt="">
+                </div>
+
+                <div class="mostwanted__container">
+                    <img style="width: 20vw;" src="images/m4.jpg" alt="">
+                    <p class="saleoverlay">Sale</p>
+                    <img class="likebtn" src="images/blackheart.png" alt="">
+                </div>
+
+                <div class="mostwanted__container">
+                    <img style="width: 20vw;" src="images/f1.jpg" alt="">
+                    <p class="saleoverlay">Sale</p>
+                    <img class="likebtn" src="images/blackheart.png" alt="">
+                </div>
+
+                <div class="mostwanted__container">
+                    <img style="width: 20vw;" src="images/f2.jpg" alt="">
+                    <p class="saleoverlay">Sale</p>
+                    <img class="likebtn" src="images/blackheart.png" alt="">
+                </div>
+
+                <div class="mostwanted__container">
+                    <img style="width: 20vw;" src="images/f3.jpg" alt="">
+                    <p class="saleoverlay">Sale</p>
+                    <img class="likebtn" src="images/blackheart.png" alt="">
+                </div>
+
+                <div class="mostwanted__container">
+                    <img style="width: 20vw;" src="images/f4.jpg" alt="">
+                    <p class="saleoverlay">Sale</p>
+                    <img class="likebtn" src="images/blackheart.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--limited offer-->
+
+        <div class="initial__animation">
+            <div class="limited__offer">
+
+                <div class="limited__image">
+                    <img src="images/offer.jpg" alt="">
+                </div>
+
+                <div class="limited__offer__content">
+                    <h2>Limited Offer</h2>
+                    <h4>35% OFF on this for the first 30 Customers</h4>
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--join letter-->
+        <div class="'initial__animation">
+            <div class="joinletter">
+                <h2>Join Our News Letter</h2>
+                <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+                <input type="text"><br>
+                <button>Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+        </div>
+
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <h2>Nostra</h2>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="footer__icon">
+            <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+        </div>
+        <p class="subtitle">@ 2023 Nostra.com</p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
